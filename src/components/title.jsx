@@ -9,16 +9,30 @@ const Title = (props) => {
       <div className="flex justify-start items-center w-full text-regular text-xs sm:text-lg">
         <input
           id="title-prefix"
-          className="outline-none w-24 sm:w-40 mr-10 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
+          className="outline-none w-24 sm:w-40 mr-8 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700 prefix"
           value={prefix.title}
           onChange={(event) => handlePrefixChange('title', event)}
         />
         <input
           id="title-name"
           placeholder="name"
-          className="outline-none placeholder-gray-700 w-1/2 sm:w-1/3 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          className="outline-none placeholder-gray-700 w-1/2 mr-8 sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
           value={data.title}
           onChange={(event) => handleDataChange('title', event)}
+        />
+        <input
+          id="title-pronoun-prefix"
+          placeholder="my pronouns are"
+          className="outline-none placeholder-gray-700 w-1/2 mr-8 sm:w-1/4 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          value={data.pronounPrefix}
+          onChange={(event) => handleDataChange('pronounPrefix', event)}
+        />
+        <input
+          id="title-pronoun"
+          placeholder="he/him"
+          className="outline-none placeholder-gray-700 w-40 border-t-0 border-l-0 border-r-0 border solid border-gray-900 py-1 px-2 focus:border-blue-700"
+          value={data.pronoun}
+          onChange={(event) => handleDataChange('pronoun', event)}
         />
       </div>
     </div>

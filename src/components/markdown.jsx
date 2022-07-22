@@ -25,6 +25,8 @@ const Title = (props) => {
 Title.propTypes = {
   prefix: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  pronounPrefix: PropTypes.string,
+  pronoun: PropTypes.string
 };
 
 const SubTitle = (props) => {
